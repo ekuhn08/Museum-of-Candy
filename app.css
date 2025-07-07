@@ -1,0 +1,106 @@
+body {
+  background-color: #f5d9d5;
+  font-family: 'Nunito', sans-serif;
+}
+
+.blurb h2 {
+    color: #ea1c2c;
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+.blurb p {
+    color: #000;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2rem;
+}
+
+.content {
+    margin-top: 100px;
+}
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: #000;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #ea1c2c;
+}
+#mainNavbar .navbar-brand {
+  color: #ea1c2c;
+  font-size: 1.5rem;
+}
+
+#headingGroup span {
+  color: #ea1c2c;
+}
+
+#headingGroup h1 {
+  font-weight: 100;
+  font-size: 4rem;
+}
+
+/* HEADING - RESPONSIVENESS */
+@media (max-width: 1200px) {
+  #headingGroup h1 {
+    font-size: 3rem;
+  }
+}
+
+
+/* HEADING - FADE IN RIGHT */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-right-custom {
+  animation-name: fadeInRight;
+  animation-duration: 7s; /* Adjust as needed */
+}
+
+
+
+/* HEADING - FADE IN LEFT */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px); /* Start slightly off-screen to the left */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* End at its normal position */
+  }
+}
+
+.fade-in-left-custom {
+  animation-name: fadeInLeft;
+  animation-duration: 7s; /* Adjust as needed */
+}
+
+.navbar.scrolled {
+  background-color: #e4bee0; /* Change to your desired color */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition */
+} 
+
+
+@keyframes twirl {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(45deg); }
+    100% { transform: rotate(-45deg); }
+}
+
+.image-to-twirl {
+  animation: twirl 2s infinite alternate ease-in-out; /* Apply the animation with duration, loop, and easing */
+}
