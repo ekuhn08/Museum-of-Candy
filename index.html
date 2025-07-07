@@ -149,15 +149,21 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 
-    <script>
-      // Your script that uses jQuery here
-      $(function() {
-          $(document).scroll(function() {
-            var $nav = $("#mainNavbar");
-            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-          });
+<script>
+  window.onload = function () {
+    if (window.jQuery) {
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $("#mainNavbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
       });
-    </script>
+    } else {
+      console.error("jQuery didn't load!");
+    }
+  };
+</script>
+
 
 
   </body>
