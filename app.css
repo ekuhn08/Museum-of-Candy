@@ -89,7 +89,7 @@ body {
   animation-duration: 7s; /* Adjust as needed */
 }
 
-.navbar.scrolled {
+#mainNavbar.scrolled {
   background-color: #e4bee0; /* Change to your desired color */
   transition: background-color 0.3s ease-in-out; /* Smooth transition */
 } 
