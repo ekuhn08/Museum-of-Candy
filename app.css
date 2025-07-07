@@ -90,8 +90,8 @@ body {
 }
 
 #mainNavbar.scrolled {
-  background-color: #e4bee0; /* Change to your desired color */
-  transition: background-color 0.3s ease-in-out; /* Smooth transition */
+  background-color: #e4bee0 !important; /* Change to your desired color */
+  transition: background-color 0.3s ease-in-out !important; /* Smooth transition */
 } 
 
 
